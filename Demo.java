@@ -1,0 +1,23 @@
+class Demo
+{
+     public static void main(String[] args)
+    {
+         int[][][][]  x = {
+    { { {1, 2,3}, {4,5,6} }, { {7,8,9,}, {10,11,12} } },      //4D array
+    { { {13,14,15}, {16,17,18} }, { {19,20,21}, {22,23,24} } }
+};
+         for(int [][][]  x1:x)        //3D
+         {
+                for(int[][] x2:x1)
+               { 
+                      for(int x3[]:x2)
+                     {
+                             for(int x4:x3)
+                            {
+                                 System.out.println(x4);
+ 	            }
+                     }
+  	}
+         }
+    } 
+}
